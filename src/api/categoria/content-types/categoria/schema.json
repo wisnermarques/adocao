@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categorias",
+  "info": {
+    "singularName": "categoria",
+    "pluralName": "categorias",
+    "displayName": "Categoria",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categoria": {
+      "type": "string",
+      "required": true
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "total": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "animals": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::animal.animal",
+      "mappedBy": "categoria"
+    }
+  }
+}

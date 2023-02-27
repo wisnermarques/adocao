@@ -37,6 +37,11 @@
       "relation": "manyToOne",
       "target": "api::categoria.categoria",
       "inversedBy": "animals"
+    },
+    "adotado": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

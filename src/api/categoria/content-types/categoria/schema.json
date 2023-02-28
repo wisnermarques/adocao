@@ -24,11 +24,6 @@
         "images"
       ]
     },
-    "total": {
-      "type": "integer",
-      "default": 0,
-      "required": true
-    },
     "animals": {
       "type": "relation",
       "relation": "oneToMany",

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adocoes",
+  "info": {
+    "singularName": "adocao",
+    "pluralName": "adocoes",
+    "displayName": "Adocao"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "animal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::animal.animal"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "adocaos"
+    }
+  }
+}

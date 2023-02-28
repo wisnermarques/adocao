@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * endereco controller
+ * adocao controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::endereco.endereco');
+module.exports = createCoreController('api::adocao.adocao');

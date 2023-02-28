@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * endereco service
+ * adocao service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::endereco.endereco');
+module.exports = createCoreService('api::adocao.adocao');

@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * endereco router
+ * adocao router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::endereco.endereco');
+module.exports = createCoreRouter('api::adocao.adocao');
